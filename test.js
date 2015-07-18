@@ -69,3 +69,15 @@ it('should pass this', function() {
   obj.sum(5).should.equal(30);
   global.should.not.have.property('b');
 });
+
+it('should restore globals', function() {
+  var globals = {setTimeout: 1234};
+  setTimeout.should.be.a.Function();
+  var result = callWithGlobals(function() {
+    return setTimeout;
+  }, globals);
+
+  result.should.be.a.Number();
+  result.should.equal(1234);
+  setTimeout.should.be.a.Function();
+});
