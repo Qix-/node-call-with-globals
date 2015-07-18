@@ -1,0 +1,28 @@
+{
+  "name": "call-with-globals",
+  "description": "Call a function with a modified global object",
+  "version": "0.1.0",
+  "author": "Qix (http://github.com/qix-)",
+  "keywords": [
+    "call",
+    "safe",
+    "global",
+    "modify",
+    "modified",
+    "with",
+    "object"
+  ],
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/qix-/node-call-with-globals.git"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "should": "^7.0.1"
+  }
+}
